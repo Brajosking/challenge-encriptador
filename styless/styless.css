@@ -7,17 +7,20 @@
 }
 
 *{
+    padding: 0;
+    margin: 0;
     background-color: var(--color-primario);
     font-family:var(--fuente-principal);
     font-weight:400;
-    font-size:2rem;
-    line-height:150%;
+    font-size:32px;
 }
-
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
 .logo{
-    padding-top: 10%;
-    margin-left:10px;
-    width: 10%;
+    width: 120px;
+    height: 48px;
      }
  main{
     display: flex;
@@ -39,18 +42,23 @@
     background-image: url("/assets/muneco.png");
     background-repeat: no-repeat;
     border: none;
-    border-radius:24px;
-    color: var(--color-segundario);
-    margin-left: 200px;
-    margin-top: 50px;
-    padding-left: 100px;
-    position:absolute;
+    color:var(--color-segundario);
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    gap: 0px;
+    border-radius: 32px 0px 0px 0px;
+    opacity: 0px;
 }
 .mensaje:focus {
     outline:none;
 }
 .botones{
     display:flexbox;
+    align-items: center;
+    gap: 24px;
     margin-top:18px;
 }
 .boton__desencriptar{
